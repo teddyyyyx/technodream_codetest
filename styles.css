@@ -185,7 +185,10 @@ textarea {
   display: flex;
   justify-content: end;
 }
-
+.contact-icon {
+  width: 2.8rem;
+  height: auto;
+}
 @media screen and (max-width: 1330px) {
   .page-cards {
     display: flex;
@@ -206,7 +209,7 @@ textarea {
 
   .main-bottom {
     display: grid;
-    grid-template-columns: calc(60% - 0.5rem) calc(40% - 0.5rem);
+    grid-template-columns: calc(58% - 0.5rem) calc(42% - 0.5rem);
     gap: 1rem;
   }
 }
@@ -234,7 +237,11 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    padding: 2rem 3% 0;
+  }
   .main-bottom {
+    gap: 0;
     display: flex;
     flex-direction: column;
   }
