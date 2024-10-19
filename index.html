@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Wood Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <img src="assets/logo.jpg" alt="logo" class="logo">
+        <div class="nav-right">
+            <ul class="nav-contacts">
+                <li>
+                    <a href="">
+                        <img src="assets/icons/home_icon.jpg" alt="" class="nav-icon">
+                        616 S. Jackson Amarillo, TX 79101
+                    </a>
+                </li>
+                <hr>
+                <li><a href="mailto:info@kellywoodbuilder.com">
+                        <img src="assets/icons/email_icon.jpg" alt="email icon" class="nav-icon">
+                        info@kellywoodbuilder.com
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="tel:+1234567890">
+                        <img src="assets/icons/phone_icon.jpg" alt="phone icon" class="nav-icon">
+                        806.379.9696
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <img src="assets/icons/burger.jpg" alt="burger icon" class="nav-burger">
+    </nav>
+
+    <main>
+        <img src="assets/carousel.jpg" alt="carousel-img" class="carousel-img">
+
+        <div class="main-bottom">
+            <div class="main-left">
+                <div class="page-cards">
+                    <img src="assets/healtcare.jpg" alt="page card image">
+                    <img src="assets/general-1.jpg" alt="page card image">
+                    <img src="assets/retail.jpg" alt="page card image">
+                </div>
+
+                <div class="welcome-text">
+                    <h1>Welcome to <span class="welcome-highlight">Kelly Wood Builder</span></h1>
+                    <hr>
+                    <p>Kelly Wood Builder is a General Contractor founded in Amarillo, Texas and now with offices in
+                        McKinney, Texas. We operate throughout the Midwest region. Started in 1977, we have come to
+                        specialize in healthcare and retail construction, but remain very active in all types of
+                        projects.
+                        Our alliances with multiple architectural firms have paved the way to success in Design/Build,
+                        Construction Management, and Fast Track construction</p>
+                </div>
+                <a href="" class="text-green read-more-btn">
+                    read more about us
+                    <img src="assets/icons/arrow_right.svg" alt="">
+                </a>
+            </div>
+
+            <div class="main-right">
+                <div>
+                    <img src="assets/contact_icon.jpg" alt="contact icon" class="contact-icon">
+                    <h1>Contact Form</h1>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Name:">
+                    <input type="email" placeholder="Email:">
+                    <textarea type="text" placeholder="Message:"></textarea>
+                    <input type="submit" class="submit-btn" value="SEND">
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+
+
+<script>
+    document.querySelector('.nav-burger').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+        // console.log('clicked');
+    })
+</script>
